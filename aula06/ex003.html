@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <style>
+        body {
+            background-color: teal;
+            color: white;
+            font: normal 20pt Arial;
+        }
+        p{
+            color: coral;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Estou aprendendo JS no Curso em Vídeo.</p>
+    <script>
+        
+        /*
+
+        var primeiro_numero = window.prompt('Digite um número: ')       
+        var segundo_numero = window.prompt('Digite outro número: ')       
+        var soma = primeiro_numero + segundo_numero
+
+        // Se a linha abaixo for executada, o valor de `soma` não será interpolado, e sim concatenado, pois o `window` retorna um valor String
+
+        window.alert('A soma dos valores é ' + soma)
+
+        // Por isso, é necessário tratar sob qual tipo de dado deseja fazer essa operação
+
+        */
+
+        var primeiro_numero = Number(window.prompt('Digite um número: '))
+        var segundo_numero = Number(window.prompt('Digite outro número: '))       
+        var soma = primeiro_numero + segundo_numero
+
+        // Outra forma de saída utilizando template string
+
+        window.alert(`A soma entre ${primeiro_numero} e ${segundo_numero} é igual a ${soma}`)
+
+
+    </script>
+</body>
+</html>
