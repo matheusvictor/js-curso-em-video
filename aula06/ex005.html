@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello World</title>
+    <style>
+      body {
+        background-color: teal;
+        color: white;
+        font: normal 20pt Arial;
+      }
+      p {
+        color: coral;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a utilizar o <strong>DOM</strong> em JavaScript!</p>
+    <div id="msg">Clique em mim.</div>
+    <script>
+      var paragrafo = window.document.getElementsByTagName("p")[0];
+      window.document.write(
+        "No primeiro parágrafo está escrito: " + paragrafo.innerHTML
+      );
+
+      /* A diferença entre innerText e inner HTML
+       - innerText retornará apenas o texto que está dentro do paragrafo
+       - innerHTML retornará o texto dentro do parágrafo, incluindo as tags HTML que estiverem com ele
+      */
+
+      window.document.write("Estou alterando a cor de background desta <div>!");
+      var minhaDiv = window.document.getElementById("msg");
+      minhaDiv.style.background = "black";
+
+      var minhaDiv = window.document.querySelector("div#msg");
+    </script>
+  </body>
+</html>
